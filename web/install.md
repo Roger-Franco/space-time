@@ -6,3 +6,4 @@ npm i prettier-plugin-tailwindcss -D (esse comando mais o plugin no config prett
 
 Commits:
 1: Configuração da fonte;
+2: Estrutura visual da home (blur background, stripes), Lista de memória vazias;
