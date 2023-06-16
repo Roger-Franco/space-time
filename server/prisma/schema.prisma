@@ -12,6 +12,21 @@ datasource db {
 
 // uuid => universal unique id
 model User {
-  id   String @id @default(uuid())
-  name String
+  id        String   @id @default(uuid())
+  githubId  Int      @unique
+  name      String
+  login     String
+  avatarUrl String
+  Memories  Memory[]
+}
+
+model Memory {
+  id        String @id @default(uuid())
+  coverUrl  String
+  content   String
+  isPublic  String
+  createdAt String
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
 }

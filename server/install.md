@@ -11,3 +11,6 @@ npx tsx src/server.ts (forma de rodar no sistema com typescript)
 * npx prisma migrate dev (cria a tabela)
 npx prisma studio (abre no navegador o banco de dados)
 * npm i @prisma/client
+
+npx prisma migrate dev
+npx prisma migrate reset (tive que resetar)
