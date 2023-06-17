@@ -15,4 +15,5 @@ npx prisma studio (abre no navegador o banco de dados)
 npx prisma migrate dev
 npx prisma migrate reset (tive que resetar)
 
-* npm i zod
+* npm i zod (ajuda na validação do id no request.params)
+npm i @fastify/cors

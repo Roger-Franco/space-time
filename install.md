@@ -6,3 +6,4 @@ Commits:
 5: Estrutura visual da home no mobile, blur background (background degradê), stripes (traços na lateral), seção hero, copyright;
 6: criação da estrutura do banco de dados;
 7: CRUD memories;
+8: Cors;
