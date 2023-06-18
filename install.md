@@ -7,3 +7,4 @@ Commits:
 6: criação da estrutura do banco de dados;
 7: CRUD memories;
 8: Cors;
+9: Fluxo de autenticação, Configuração Github OAuth, Obtendo Github code web;
