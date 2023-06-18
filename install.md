@@ -8,3 +8,4 @@ Commits:
 7: CRUD memories;
 8: Cors;
 9: Fluxo de autenticação, Configuração Github OAuth, Obtendo Github code web;
+10: Refatorando a page para ficar mais limpa;
