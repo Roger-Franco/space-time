@@ -17,3 +17,7 @@ npx prisma migrate reset (tive que resetar)
 
 * npm i zod (ajuda na validação do id no request.params)
 npm i @fastify/cors
+
+* npm i dotenv -D 
+* npm i axios
+* npm i @fastify/jwt  

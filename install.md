@@ -9,3 +9,5 @@ Commits:
 8: Cors;
 9: Fluxo de autenticação, Configuração Github OAuth, Obtendo Github code web;
 10: Refatorando a page para ficar mais limpa;
+11: Rota de autenticação;
+12: Rota de autenticação - Criação de token JWT;
