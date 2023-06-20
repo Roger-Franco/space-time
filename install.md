@@ -11,3 +11,4 @@ Commits:
 10: Refatorando a page para ficar mais limpa;
 11: Rota de autenticação;
 12: Rota de autenticação - Criação de token JWT;
+13: Rotas autenticadas; 
