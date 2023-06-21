@@ -15,3 +15,4 @@ Commits:
 14: Salvando token nos cookies;
 15: Exibindo perfil do usuário;
 16: Instalação do expor-auth-session, configuração Github OAuth (Expo), Obtendo Github code mobile;
+17: Salvando o token no secure store, Navegando usuário, Utilizando Expo Router;
