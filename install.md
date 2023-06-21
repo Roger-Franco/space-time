@@ -13,3 +13,4 @@ Commits:
 12: Rota de autenticação - Criação de token JWT;
 13: Rotas autenticadas; 
 14: Salvando token nos cookies;
+15: Exibindo perfil do usuário;
