@@ -8,3 +8,4 @@ npm i prettier-plugin-tailwindcss -D
 npx expo install @expo-google-fonts/roboto @expo-google-fonts/bai-jamjuree expo-font
 npx expo install react-native-svg (https://github.com/kristerkari/react-native-svg-transformer)
 npm i -D react-native-svg-transformer
+npx expo install expo-auth-session expo-crypto
