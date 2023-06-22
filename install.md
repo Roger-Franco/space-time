@@ -18,3 +18,4 @@ Commits:
 17: Salvando o token no secure store, Navegando usuário, Utilizando Expo Router;
 18: Definindo layouts das rotas;
 19: Rota de logout;
+20: Página de nova memória;

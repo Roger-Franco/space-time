@@ -4,3 +4,4 @@ npm i prettier-plugin-tailwindcss -D (esse comando mais o plugin no config prett
 npm i lucide-react
 npm i axios 
 npm i jwt-decode
+npm install -D @tailwindcss/forms
