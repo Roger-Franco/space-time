@@ -21,3 +21,5 @@ npm i @fastify/cors
 * npm i dotenv -D 
 * npm i axios
 * npm i @fastify/jwt  
+* npm i @fastify/multipart 
+* npm i @fastify/static 

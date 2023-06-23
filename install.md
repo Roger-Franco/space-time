@@ -23,3 +23,4 @@ Commits:
 22: Definindo layout das rotas;
 23: Personalizando rota inicial do app;
 24: Página de nova memória;
+25: Rota de upload de arquivos, Servindo arquivos estáticos;
