@@ -22,3 +22,4 @@ Commits:
 21: Middleware de autenticação;
 22: Definindo layout das rotas;
 23: Personalizando rota inicial do app;
+24: Página de nova memória;
