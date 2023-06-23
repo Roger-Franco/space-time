@@ -20,3 +20,4 @@ Commits:
 19: Rota de logout;
 20: Página de nova memória;
 21: Middleware de autenticação;
+22: Definindo layout das rotas;
