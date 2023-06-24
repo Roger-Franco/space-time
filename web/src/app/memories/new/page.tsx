@@ -1,3 +1,4 @@
+import { MediaPicker } from '@/components/MediaPicker'
 import { Camera, ChevronLeft } from 'lucide-react'
 import Link from 'next/link'
 
@@ -30,7 +31,7 @@ export default function NewMemory() {
           </label>
         </div>
         {/* Esse input ficou aqui embaixo apenas para não atrapalhar a disposição dos ítens, mas não muda em nada o efeito */}
-        <input type="file" id="media" className="invisible h-0 w-0" />
+        <MediaPicker />
         <textarea 
         name="content"
         spellCheck={false}
