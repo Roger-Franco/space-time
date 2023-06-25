@@ -25,3 +25,4 @@ Commits:
 24: Página de nova memória;
 25: Rota de upload de arquivos, Servindo arquivos estáticos;
 26: Preview da mídia;
+27: Selecionando imagem da galeria, preview da imagem;
