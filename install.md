@@ -27,3 +27,4 @@ Commits:
 26: Preview da mídia;
 27: Selecionando imagem da galeria, preview da imagem;
 28: Criando nova memória;
+29: Layout da listagem/ Buscando memórias de API;
