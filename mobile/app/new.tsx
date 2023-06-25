@@ -1,14 +1,17 @@
 import { Image, ScrollView, Switch, Text, TextInput, View } from 'react-native'
 import Icon from '@expo/vector-icons/Feather'
 import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
-import { Link } from 'expo-router'
+import { Link, useRouter } from 'expo-router'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { useState } from 'react'
 import * as ImagePicker from 'expo-image-picker'
+import * as SecureStore from 'expo-secure-store'
+import { api } from '../src/lib/api'
 
 export default function NewMemory() {
   const { bottom, top } = useSafeAreaInsets()
+  const router = useRouter()
 
   const [preview, setPreview] = useState<string | null>(null)
   const [content, setContent] = useState('')
@@ -33,7 +36,42 @@ export default function NewMemory() {
     // }
   }
 
-  function handleCreateMemory() {}
+  async function handleCreateMemory() {
+    const token = SecureStore.getItemAsync('token')
+    let coverUrl = ''
+
+    if (preview) {
+      const uploadFormData = new FormData()
+
+      uploadFormData.append('file', {
+        uri: preview,
+        name: 'image.jpg',
+        type: 'image/jpeg',
+      } as any)
+
+      const uploadResponse = await api.post('/upload', uploadFormData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      })
+      coverUrl = uploadResponse.data.fileUrl
+      // console.log(coverUrl)
+    }
+    await api.post(
+      '/memories',
+      {
+        content,
+        isPublic,
+        coverUrl,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      },
+    )
+    router.push('/memories')
+  }
   return (
     <ScrollView
       className="flex-1 px-8"
@@ -68,6 +106,7 @@ export default function NewMemory() {
           {preview ? (
             <Image
               source={{ uri: preview }}
+              alt=""
               className="h-full w-full rounded-lg object-cover"
             />
           ) : (
@@ -82,6 +121,7 @@ export default function NewMemory() {
         <TextInput
           value={content}
           onChangeText={setContent}
+          textAlignVertical="top"
           multiline
           className="p-0 font-body text-lg text-gray-50"
           placeholderTextColor="#56565a"
