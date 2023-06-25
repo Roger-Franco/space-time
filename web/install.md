@@ -7,3 +7,4 @@ npm i jwt-decode
 npm install -D @tailwindcss/forms
 npm i js-cookie
 npm i --save-dev @types/js-cookie
+npm i dayjs 

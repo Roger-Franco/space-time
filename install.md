@@ -28,3 +28,4 @@ Commits:
 27: Selecionando imagem da galeria, preview da imagem;
 28: Criando nova memória;
 29: Layout da listagem/ Buscando memórias de API;
+30: Layout da listagem/ Buscando memórias da API;
